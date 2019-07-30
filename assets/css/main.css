@@ -26,6 +26,12 @@
 } */
 
 /*              #########################   Main Body #3###################    */
+
+body {
+  height: 5000px;
+  overflow-x: hidden;
+}
+
 .whole-content-wrapper {
   max-width: 1680px;
   margin: auto;
@@ -36,11 +42,19 @@
   height: 720px;
   width: 100%;
   text-align: center;
-  max-width: 1680px;
+  /* max-width: 1680px; */
 }
 
 .banner-img {
   height: 80%;
+}
+
+.moving-title {
+  position: fixed;
+  top: 75%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  left: 100px;
 }
 
 .main-title-wrap {
@@ -48,7 +62,7 @@
   text-align: center;
   top: 0;
   left: 0;
-  width: 100px;
+  width: 125px;
   max-height: 120%;
   margin: 0 17%;
   overflow-y: auto;
@@ -163,10 +177,11 @@
 
 /*     ##################   btrax staff section  #################### */
 .employee-section {
-  padding: 5%;
+  padding: 5% 7%;
 }
 
 .employee-section-title {
+  padding-left: 2%;
   margin-top: 150px;
   margin-bottom: 300px;
 }
@@ -179,4 +194,86 @@
 
 .employee-section p {
   font-size: 36px;
+}
+
+/*      ###########   Staff Card   ###############     */
+.employee-pictures-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.employee-card {
+  text-align: center;
+}
+
+.employee-picture {
+  width: 80%;
+}
+
+.name-wrap {
+  margin-top: 20px;
+}
+
+.name-wrap > p {
+  font-size: 22px;
+  color: #54849a;
+  font-weight: 700;
+}
+
+.occupation-address-wrap {
+  margin-top: 10px;
+}
+
+.occupation-address-wrap > p {
+  font-size: 12px;
+  margin-bottom: unset;
+}
+
+/* entire container, keeps perspective */
+.flip-card-container {
+  perspective: 1000px;
+  width: 20%;
+}
+
+/* flip the pane when hovered */
+.flip-card-container:hover .flipper,
+.flip-card-container.hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.flip-card-container,
+.front-card,
+.back-card {
+  width: 320px;
+  height: 480px;
+}
+
+/* flip speed goes here */
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+
+  position: relative;
+}
+
+/* hide back of pane during swap */
+.front-card,
+.back-card {
+  backface-visibility: hidden;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back-card {
+  transform: rotateY(180deg);
 }
