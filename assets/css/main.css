@@ -217,15 +217,15 @@ body {
   transform-origin: right top;
 } */
 
-.mission-section-wrap > div {
+/* .mission-section-wrap > div {
   width: 100%;
   font-size: 74px;
   color: white;
-  display: block;
-  /* padding: 5px; */
-  /* transform: rotate(90deg); */
+  display: table;
+  padding: 5px;
+  transform: rotate(90deg);
   transform-origin: right top;
-}
+} */
 
 /* .mission-statement-wrap-1 {
   text-align: left;
@@ -256,23 +256,35 @@ body {
 }
 
 .module {
-  width: 1000px;
+  width: 100%;
   min-height: 200px;
   background: black;
   position: relative;
   float: left;
   margin-right: 4%;
+  display: table;
+  vertical-align: middle;
 }
 
 .mission-p {
-  padding-left: 2%;
+  line-height: 200px;
+  color: white;
+  width: 100%;
+  padding-left: 5%;
   margin: unset;
+  display: table-cell;
+  font-size: 18px;
 }
 
 .mission-h2 {
+  line-height: 200px;
+  color: white;
+  width: 100%;
   text-align: right;
-  padding-right: 2%;
+  padding-right: 5%;
   margin: unset;
+  display: table-cell;
+  font-size: 69px;
 }
 /* 
 body {
