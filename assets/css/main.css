@@ -123,30 +123,57 @@ body {
 /*  #############  iFrame Stuff######################   */
 .video-section {
   height: 95vh;
-  padding: 4%;
+  padding: 7%;
+  padding-bottom: 0;
 }
 
 .iframe-wrapper {
   width: 100%;
-  height: 100%;
+  height: 90%;
   margin: auto;
   text-align: center;
 }
 
 /*  #############   Video Para part   ######### */
-.para-below-video-wrap {
+.content-below-video-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 7%;
+  padding-top: 0;
+  position: relative;
+}
+
+.video-para-left {
+  width: 50%;
+}
+
+.video-para-left > h2 {
+  margin: unset;
+  margin-bottom: 3%;
+  font-size: 46px;
+  font-weight: 600;
+}
+
+.video-para-left > p {
+  font-size: 18px;
+  margin-bottom: unset;
+}
+
+.video-para-right {
+  width: 46.5%;
   display: table;
-  height: 300px;
-  width: 40%;
-  margin: auto;
+  /* height: 300px; */
+  /* margin: auto; */
   text-align: center;
   vertical-align: middle;
 }
 
-.para-below-video-wrap > p {
+.video-para-right > p {
   width: 45%;
-  margin: auto;
-  font-size: 28px;
+  font-size: 22px;
+  line-height: 1.4;
+  font-weight: 300;
+  text-align: left;
   display: table-cell;
   vertical-align: middle;
 }
@@ -154,24 +181,51 @@ body {
 /*  ######       MISSION STATEMENT PART      ######### */
 .mission-section {
   width: 100%;
-  height: 100vh;
-  background-color: #e7fbfb;
-  text-align: center;
+  position: fixed;
+  background-color: black;
+  height: 1900px;
+  top: 2000px;
+  /* position: fixed; */
+  /* text-align: center;
   display: table;
-  vertical-align: middle;
+  vertical-align: middle; */
 }
 
-.mission-statement-wrap {
+.mission-section-fixed {
+  width: 100%;
+  position: fixed;
+  background-image: url("../images/Black-Background.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: -webkit-fill-available;
+}
+
+/* .mission-statement-wrap {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
-}
-.mission-statement-wrap > p {
-  font-size: 24px;
-  margin-bottom: 12px;
+} */
+
+.mission-statement-wrap-1 {
+  text-align: left;
+  width: 100%;
 }
 
-.mission-statement-wrap > h2 {
+.mission-statement-wrap-2 {
+  text-align: right;
+  width: 100%;
+}
+
+.mission-statement-wrap-1 > p {
+  color: white;
+  font-size: 24px;
+  /* margin-bottom: 12px; */
+}
+
+.mission-statement-wrap-2 > h2 {
+  color: white;
   font-size: 42px;
 }
 
