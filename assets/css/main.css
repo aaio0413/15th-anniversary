@@ -356,6 +356,7 @@ body {
 .employee-pictures-wrap {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .employee-card {
@@ -389,6 +390,7 @@ body {
 .flip-card-container {
   perspective: 1000px;
   width: 20%;
+  margin: auto;
 }
 
 /* flip the pane when hovered */
@@ -401,7 +403,7 @@ body {
 .flip-card-container,
 .front-card,
 .back-card {
-  width: 320px;
+  width: 300px;
   height: 480px;
 }
 
