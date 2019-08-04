@@ -526,8 +526,12 @@ footer h2 {
 }
 
 @media only screen and (max-width: 426px) {
-  .iframe-wrapper {
+  /* .iframe-wrapper {
     height: 40%;
+  } */
+
+  .video-section {
+    height: 30vh;
   }
 
   .video-para-left h2 {
@@ -544,16 +548,29 @@ footer h2 {
     font-size: 14.5px;
   }
 
-  .employee-section h2 {
+  .employee-section-title {
+    margin-top: 82px;
+    margin-bottom: 82px;
+  }
+
+  .employee-section-title h2 {
     font-size: 40px;
     text-align: center;
     margin-bottom: 10px;
   }
 
-  .employee-section p {
+  .employee-section-title p {
+    padding: unset !important;
     text-align: center;
     font-size: 24px;
     font-weight: 500;
+  }
+
+  .flip-card-container,
+  .front-card,
+  .back-card {
+    width: 276px;
+    height: 386px;
   }
 
   .module {
@@ -580,8 +597,8 @@ footer h2 {
 }
 
 @media only screen and (max-width: 871px) and (min-width: 632px) {
-  .iframe-wrapper {
-    height: 60%;
+  .video-section {
+    height: 45vh;
   }
 
   .module {
@@ -608,8 +625,8 @@ footer h2 {
 }
 
 @media only screen and (max-width: 631px) and (min-width: 426px) {
-  .iframe-wrapper {
-    height: 50%;
+  .video-section {
+    height: 40vh;
   }
 
   .video-para-left h2 {
@@ -631,13 +648,14 @@ footer h2 {
     font-size: 85px;
   }
 
-  .employee-section h2 {
+  .employee-section-title h2 {
     font-size: 50px;
     text-align: center;
     margin-bottom: 16px;
   }
 
-  .employee-section p {
+  .employee-section-title p {
+    padding: unset !important;
     font-size: 32px;
     text-align: center;
   }
@@ -649,5 +667,17 @@ footer h2 {
 
   .icon-wrap {
     width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 872px) {
+  .video-section {
+    height: 70vh;
+  }
+}
+
+@media only screen and (max-width: 1045px) {
+  .spacer-card {
+    display: none;
   }
 }
