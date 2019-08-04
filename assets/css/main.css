@@ -24,6 +24,25 @@
 .demo-card-wide > .mdl-card__menu {
   color: #fff;
 } */
+/*    #######################3   Loading   GIF        ######################     */
+#loader {
+  height: 100vh;
+  width: 100vw;
+  background-color: #226db1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  transition: all, 5s;
+}
+
+#loader img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 /*              #########################   Main Body #3###################    */
 
@@ -46,7 +65,7 @@ body {
 }
 
 .banner-img {
-  height: 80%;
+  width: 100%;
 }
 
 .moving-title {
@@ -257,7 +276,7 @@ body {
 
 .module {
   width: 100%;
-  min-height: 200px;
+  min-height: 220px;
   background: black;
   position: relative;
   float: left;
@@ -267,24 +286,24 @@ body {
 }
 
 .mission-p {
-  line-height: 200px;
+  line-height: 220px;
   color: white;
   width: 100%;
-  padding-left: 5%;
+  padding-left: 7%;
   margin: unset;
   display: table-cell;
   font-size: 18px;
 }
 
 .mission-h2 {
-  line-height: 200px;
+  line-height: 220px;
   color: white;
   width: 100%;
   text-align: right;
-  padding-right: 5%;
+  padding-right: 7%;
   margin: unset;
   display: table-cell;
-  font-size: 69px;
+  font-size: 180px;
 }
 /* 
 body {
@@ -333,6 +352,7 @@ body {
 }
 
 /*      ###########   Staff Card   ###############     */
+/*      ###########   Staff Card   ###############     */
 .employee-pictures-wrap {
   display: flex;
   justify-content: space-between;
@@ -375,6 +395,7 @@ body {
 .flip-card-container:hover .flipper,
 .flip-card-container.hover .flipper {
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
 
 .flip-card-container,
@@ -388,16 +409,19 @@ body {
 .flipper {
   transition: 0.6s;
   transform-style: preserve-3d;
-
   position: relative;
 }
 
 /* hide back of pane during swap */
 .front-card,
 .back-card {
+  /* -webkit-perspective: 0; */
+  -webkit-backface-visibility: hidden;
+  /* -webkit-transform: translate3d(0, 0, 0); */
+  visibility: visible;
   backface-visibility: hidden;
-
   position: absolute;
+
   top: 0;
   left: 0;
 }
@@ -407,9 +431,11 @@ body {
   z-index: 2;
   /* for firefox 31 */
   transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
 }
 
 /* back, initially hidden pane */
 .back-card {
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }

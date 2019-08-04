@@ -47,3 +47,10 @@ win.scroll(function(event) {
     }
   });
 });
+
+const loader = document.getElementById("loader");
+window.addEventListener("load", function() {
+  // loader.style.height = "100px";
+  // loader.style.width = "100px";
+  loader.style.visibility = "hidden";
+});
