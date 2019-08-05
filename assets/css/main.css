@@ -154,6 +154,15 @@ body {
   text-align: center;
 }
 
+.temp-video-h2 {
+  margin: unset;
+  color: white;
+}
+
+.play-icon-img {
+  width: 8%;
+}
+
 /*  #############   Video Para part   ######### */
 .content-below-video-wrap {
   display: flex;
@@ -477,6 +486,11 @@ footer h2 {
 
 .social-share {
   color: white;
+  width: 25%;
+}
+
+.social-share-icon {
+  width: 85%;
 }
 
 /*     ##################     MEDIA QUERY    ########################  */
@@ -557,6 +571,15 @@ footer h2 {
     font-size: 14.5px;
   }
 
+  .play-icon-img {
+    width: 12%;
+  }
+
+  .temp-video-h2 {
+    font-size: 22px;
+    line-height: 12px;
+  }
+
   .employee-section-title {
     margin-top: 82px;
     margin-bottom: 82px;
@@ -587,12 +610,14 @@ footer h2 {
   }
 
   .mission-p {
-    font-size: 18px;
+    font-size: 14px;
+    padding-left: 5%;
   }
 
   .mission-h2 {
-    line-height: 68px;
+    line-height: 79px;
     font-size: 68px;
+    padding-right: 5%;
   }
 
   footer h2 {
@@ -605,13 +630,30 @@ footer h2 {
   }
 }
 
+@media only screen and (max-width: 320px) {
+  .mission-p {
+    font-size: 12px;
+    padding-left: 3%;
+  }
+
+  .mission-h2 {
+    line-height: 64px;
+    font-size: 56px;
+    padding-right: 3%;
+  }
+
+  .module {
+    min-height: 64px;
+  }
+}
+
 @media only screen and (max-width: 871px) and (min-width: 632px) {
   .video-section {
     height: 45vh;
   }
 
   .module {
-    min-height: 110px;
+    min-height: 124px;
   }
 
   .mission-p {
@@ -619,7 +661,7 @@ footer h2 {
   }
 
   .mission-h2 {
-    line-height: 110px;
+    line-height: 124px;
     font-size: 110px;
   }
 
@@ -659,17 +701,27 @@ footer h2 {
     font-size: 38px;
   }
 
+  .temp-video-h2 {
+    font-size: 28px;
+    line-height: 15px;
+  }
+
+  .play-icon-img {
+    width: 11%;
+  }
+
   .module {
     min-height: 85px;
   }
 
   .mission-p {
-    font-size: 22px;
+    line-height: 85px;
+    font-size: 14px;
   }
 
   .mission-h2 {
     line-height: 85px;
-    font-size: 85px;
+    font-size: 75px;
   }
 
   .employee-section-title h2 {
@@ -703,6 +755,10 @@ footer h2 {
 @media only screen and (max-width: 1045px) {
   .spacer-card {
     display: none;
+  }
+
+  .mission-h2 {
+    padding-right: 5%;
   }
 }
 
