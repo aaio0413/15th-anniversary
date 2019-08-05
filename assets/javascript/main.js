@@ -54,3 +54,13 @@ window.addEventListener("load", function() {
   // loader.style.width = "100px";
   loader.style.visibility = "hidden";
 });
+
+// $('.social-share').addClass('fa-3x').removeClass('fa-4x');
+
+if ($(window).width() < 769) {
+  $(".social-share-icon")
+    .removeClass("fa-4x")
+    .addClass("fa-3x");
+} else {
+  $(".social-share-icon").addClass("fa-4x");
+}
