@@ -489,6 +489,10 @@ footer h2 {
   width: 25%;
 }
 
+.social-share:hover {
+  opacity: 0.4;
+}
+
 .social-share-icon {
   width: 85%;
 }
