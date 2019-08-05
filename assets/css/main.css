@@ -342,8 +342,7 @@ body {
 
 .employee-section-title {
   padding-left: 2%;
-  margin-top: 150px;
-  margin-bottom: 300px;
+  margin: 150px auto;
 }
 
 .employee-section h2 {
@@ -387,7 +386,7 @@ body {
 }
 
 .occupation-address-wrap > p {
-  font-size: 12px;
+  font-size: 16px;
   margin-bottom: unset;
 }
 

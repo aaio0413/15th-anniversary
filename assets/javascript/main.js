@@ -48,6 +48,7 @@ win.scroll(function(event) {
   });
 });
 
+//   #################### Loading GIF part #################//
 const loader = document.getElementById("loader");
 window.addEventListener("load", function() {
   // loader.style.height = "100px";
