@@ -65,3 +65,11 @@ window.addEventListener("load", function() {
 // } else {
 //   $(".social-share-icon").addClass("fa-4x");
 // }
+
+// if ($(window).width() < 426) {
+//   $(".banner-img").attr("display", "block");
+//   $(".header-img-gif").attr("display", "none");
+// } else {
+//   $(".banner-img").attr("display", "none");
+//   $(".header-img-gif").attr("display", "block");
+// }
