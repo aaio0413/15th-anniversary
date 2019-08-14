@@ -650,7 +650,8 @@ footer h2 {
 .first-footer-title {
   text-align: center;
   width: 100%;
-  margin: 1% 0;
+  margin: 4% 0;
+  font-weight: 600;
 }
 
 /*    ###########  SECOND FOOTER   ###############    */
@@ -659,7 +660,7 @@ footer h2 {
   background-color: white;
   height: 300px;
   color: black;
-  padding: 4%;
+  padding: 4% 7%;
 }
 
 .first-part {
@@ -677,16 +678,35 @@ footer h2 {
 
 .right-footer-part {
   text-align: right;
-  width: auto;
+  width: 40%;
+  /* display: flex; */
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.sanFran-office {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+.tokyo-office {
+  margin-top: 7%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sanFran-office > p,
+.tokyo-office > p {
+  font-size: 22px;
+  font-weight: 400;
+}
+
 .right-footer-part a {
   text-decoration: none;
   color: black;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 22px;
 }
 
@@ -714,6 +734,24 @@ footer {
 @media only screen and (min-width: 1681px) {
   .main-head-container {
     height: auto;
+  }
+}
+
+@media only screen and (max-width: 1900px) and (min-width: 1500px) {
+  .module {
+    min-height: 245px;
+  }
+
+  .mission-h2 {
+    line-height: 220px;
+    font-size: 235px;
+    padding-right: 10%;
+  }
+
+  .mission-p {
+    line-height: 220px;
+    font-size: 20px;
+    padding-left: 10%;
   }
 }
 
@@ -1017,6 +1055,12 @@ footer {
   }
 }
 
+@media only screen and (max-width: 1744px) {
+  .spacer-card2 {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 1000px) and (min-width: 769px) {
   .employee-section-title h2 {
     font-size: 94px;
@@ -1110,7 +1154,7 @@ footer {
 
   .right-footer-part {
     margin: auto;
-    width: 45%;
+    width: 50%;
   }
 
   .right-footer-part a {
@@ -1123,6 +1167,19 @@ footer {
     margin-top: 7%;
     width: 70%;
     text-align: center;
+  }
+
+  .second-footer {
+    height: auto;
+  }
+
+  .sanFran-office,
+  .tokyo-office {
+    margin: auto;
+  }
+
+  .tokyo-office {
+    margin-top: 8%;
   }
 
   footer {
@@ -1146,7 +1203,7 @@ footer {
   }
 }
 
-@media only screen and (min-width: 1680px) {
+@media only screen and (min-width: 1901px) {
   .mission-h2 {
     line-height: 324px;
     font-size: 290px;
@@ -1162,7 +1219,9 @@ footer {
     font-size: 28px;
     padding-left: 12%;
   }
+}
 
+@media only screen and (min-width: 1680px) {
   .video-section {
     height: 75vh;
   }
@@ -1179,11 +1238,13 @@ footer {
   /* .content-below-video-wrap {
     height: 72vh;
   } */
-  .first-footer,
-  .second-footer {
-    padding: 4% 20%;
+  .first-footer {
+    padding: 5% 20%;
   }
 
+  .second-footer {
+    padding: 4% 7%;
+  }
   .left-footer-part h2 {
     font-size: 58px;
   }
@@ -1232,5 +1293,11 @@ footer {
 
   .share-social-field h2 {
     font-size: 34px;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .right-footer-part {
+    width: 90%;
   }
 }
