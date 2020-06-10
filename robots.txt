@@ -1,2 +1,2 @@
 User-agent : *
-Disallow : /images/profile-pictures/before/yu.png
+Disallow : /assets/images/profile-pictures/before/yu.png
